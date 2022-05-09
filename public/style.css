@@ -1,0 +1,116 @@
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Blue-Hover: hsl(223, 91%, 69%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+button,
+input {
+  border: none;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 28%;
+  gap: 1em;
+  text-align: center;
+}
+.heading {
+  font-weight: 300;
+  color: var(--Gray);
+  font-size: 4rem;
+  letter-spacing: 2.5px;
+}
+.mark {
+  color: black;
+  font-weight: 700;
+}
+.desc {
+  font-size: 1.9rem;
+  font-weight: 300;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.input__group {
+  display: flex;
+  gap: 0.5em;
+}
+#email {
+  border: 1px solid rgb(226, 226, 226);
+  font-size: 1.5rem;
+  width: 450px;
+  border-radius: 2em;
+  padding: 1em;
+  transition: 0.3s;
+}
+#email:hover {
+  border: 1px solid var(--Gray);
+}
+#error {
+  text-align: left;
+  color: var(--Light-Red);
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin-left: 1.7em;
+}
+button {
+  width: 35%;
+  height: fit-content;
+  padding: 1em;
+  border-radius: 2em;
+  font-weight: 600;
+  background-color: var(--Blue);
+  color: white;
+}
+button:hover {
+  background-color: var(--Blue-Hover);
+  cursor: pointer;
+}
+::placeholder {
+  color: rgb(174, 173, 173);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.social i {
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 50%;
+  padding: 0.5em;
+  color: var(--Pale-Blue);
+  transition: 0.3s;
+  width: 35px;
+  height: 35px;
+}
+.social i:hover {
+  color: white;
+  background-color: var(--Very-Dark-Blue);
+  cursor: pointer;
+}
+.copyright {
+  color: var(--Gray);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+@keyframes Shake {
+  to {
+    margin-left: 5px;
+  }
+}

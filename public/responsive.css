@@ -1,0 +1,47 @@
+@media (max-width: 1114px) {
+  .app {
+    padding: 5em 20%;
+  }
+}
+@media (max-width: 810px) {
+  .app {
+    padding: 5em 9%;
+  }
+}
+@media (max-width: 594px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .input__group {
+    flex-direction: column;
+  }
+  #error {
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 1em;
+  }
+}
+@media (max-width: 471px) {
+  .heading {
+    font-size: 2rem;
+  }
+  #email {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+    margin-top: 1em;
+  }
+  #error {
+    font-size: 1.2rem;
+  }
+  .copyright {
+    font-size: 1.2rem;
+  }
+}
